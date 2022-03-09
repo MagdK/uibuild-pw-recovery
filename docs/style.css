@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+  
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+  
+textarea {
+    resize: none;
+}
+  
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+
+input {
+    all: unset;
+}
+
+/* End of CSS reset */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: #006837;
+}
+
+div {
+    background-color: #f9c582;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+div p {
+    color: #467745;
+    padding-bottom: 16px;
+}
+
+div input {
+    color: #98A991;
+    height: 64px;
+    background-color: #fff;
+
+}
+
+div p,
+div input {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+}
+
+div p span {
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1400px) {
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    div {
+        max-width: 520px;
+    }
+    div p {
+        margin-bottom: 20px;
+    }
+    input {
+        max-width: 480px;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    h1 {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+    div {
+        width: 100%;
+    }
+    div p {
+        margin-bottom: 16px;
+    }
+    input {
+        width: 100% - 40px;
+    }
+}
