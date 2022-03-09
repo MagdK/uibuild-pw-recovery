@@ -33,10 +33,6 @@ select {
     border-radius: 0;
 }
 
-input {
-    all: unset;
-}
-
 /* End of CSS reset */
 
 body {
@@ -44,33 +40,42 @@ body {
     background-color: #f2f2f2;
 }
 
-h1 {
+section {
+    margin: 0 auto;
+}
+
+section h1 {
     font-weight: 300;
     text-transform: uppercase;
     text-align: center;
     color: #006837;
 }
 
-div {
+section div {
     background-color: #f9c582;
-    padding: 20px;
     margin: 0 auto;
 }
 
-div p {
+section div p {
     color: #467745;
-    padding-bottom: 16px;
 }
 
-div input {
-    color: #98A991;
+input {
     height: 64px;
     background-color: #fff;
-
+    margin: 0 20px 20px 20px;
 }
 
-div p,
-div input {
+::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    color: #98A991;
+    letter-spacing: 1.2px;
+    padding-left: 20px;
+}
+
+section div p,
+section div input {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.8px;
@@ -81,19 +86,35 @@ div p span {
     font-weight: 300;
 }
 
-@media only screen and (max-width: 1400px) {
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #006837;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #F9C582;
+}
+
+@media only screen and (max-width: 1800px) {
     h1 {
         font-size: 36px;
+        line-height: 36px;
         margin-bottom: 20px;
     }
-    div {
+    section {
         max-width: 520px;
+        margin-top: 130px;
     }
-    div p {
-        margin-bottom: 20px;
+    section div p {
+        padding: 20px;
     }
     input {
-        max-width: 480px;
+        width: 480px;
     }
 }
 
@@ -103,13 +124,13 @@ div p span {
         line-height: 24px;
         margin-bottom: 16px;
     }
-    div {
+    section {
         width: 100%;
     }
-    div p {
-        margin-bottom: 16px;
+    section div p {
+        padding: 20px 20px 16px 20px;
     }
     input {
-        width: 100% - 40px;
+        width: calc(100% - 40px);
     }
 }
