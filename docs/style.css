@@ -90,14 +90,14 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    font-size: 21px;
-    font-weight: 700;
-    text-align: center;
-    color: #006837;
     width: 120px;
     height: 120px;
     border-radius: 60px;
     background-color: #F9C582;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #006837;
 }
 
 @media only screen and (max-width: 1800px) {
